@@ -417,6 +417,7 @@ img {
 }
 .pickle-site-img{
 	max-width:850px;
+	width:100%;
 }
 .gallery ul li a {
 	display:block;

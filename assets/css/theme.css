@@ -165,7 +165,7 @@ a:hover,a:focus {
 }
 @media(min-width:768px) {
 	.intro {
-			height:100vh;
+			height:50vh;
 			padding:0;
 	}
 	.intro .intro-body .brand-heading {
@@ -313,6 +313,10 @@ ul.banner-social-buttons {
 	.intro {
 		padding:100px 0 50px 0;
 	}
+	.gallery ul li {
+    width: 50%;
+
+	}
 }
 footer {
 	padding:40px 0;
@@ -405,8 +409,14 @@ img {
 	margin:0;
 	position:relative;
 	list-style:none;
-	padding:0;
+	padding:10px;
 	display:inline-block;
+}
+#portfolio.pickle-site{
+	text-align:center;
+}
+.pickle-site-img{
+	max-width:850px;
 }
 .gallery ul li a {
 	display:block;
@@ -414,10 +424,9 @@ img {
 	width:100%;
 	height:100%;
 	margin:0;
-	padding:0;
+	padding:10px;
 	line-height:0;
 	overflow:hidden;
-	max-height:220px;
 }
 .gallery ul li a:before {
 	position:absolute;

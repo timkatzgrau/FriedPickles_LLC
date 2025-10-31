@@ -1,0 +1,357 @@
+/* Elegant Design System for FriedPickles LLC */
+
+/* Modern Typography */
+:root {
+    --primary-color: #1e4d2b;
+    --accent-color: #2d6a3e;
+    --accent-hover: #1e4d2b;
+    --text-color: #1e4d2b;
+    --text-light: #5a7c5f;
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --border-color: #e1e8ed;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+    --gradient-primary: linear-gradient(135deg, #2d6a3e 0%, #1e4d2b 100%);
+    --gradient-accent: linear-gradient(135deg, #2d6a3e 0%, #1e4d2b 100%);
+}
+
+/* Legal Pages Typography */
+.legal-page {
+    background: var(--bg-light);
+}
+
+.legal-page .intro {
+    background-image: linear-gradient(135deg, rgba(45, 106, 62, 0.95) 0%, rgba(30, 77, 43, 0.95) 100%),
+                      url('https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375');
+    min-height: 45vh;
+}
+
+.legal-page .intro .brand-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.legal-page .intro p {
+    font-size: 1rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+/* Content Container */
+.legal-content {
+    background: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    padding: 4rem 3rem;
+    margin: -4rem auto 4rem;
+    max-width: 900px;
+    position: relative;
+}
+
+#privacy-content,
+#terms-content {
+    padding-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 2rem 1.5rem;
+        margin: -2rem 1rem 2rem;
+        border-radius: 8px;
+    }
+}
+
+/* Typography Improvements */
+.legal-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--accent-color);
+    letter-spacing: -0.5px;
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+    padding-top: 0.5rem;
+}
+
+.legal-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.25px;
+}
+
+.legal-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.legal-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+}
+
+.legal-content ul,
+.legal-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.legal-content ul li,
+.legal-content ol li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+    font-weight: 300;
+}
+
+.legal-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.legal-content ul li {
+    padding-left: 1.75rem;
+    position: relative;
+}
+
+.legal-content ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.legal-content ul ul li:before {
+    content: "•";
+}
+
+/* Links */
+.legal-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.legal-content a:hover {
+    color: var(--accent-hover);
+    border-bottom-color: var(--accent-hover);
+}
+
+/* Strong text */
+.legal-content strong {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Section dividers */
+.legal-content hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+    margin: 3rem 0;
+}
+
+/* Callout boxes */
+.legal-content .callout {
+    background: var(--bg-light);
+    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+}
+
+.legal-content .callout p:last-child {
+    margin-bottom: 0;
+}
+
+/* Homepage Elegant Updates */
+.elegant-intro {
+    background-image: linear-gradient(135deg, rgba(30, 77, 43, 0.9) 0%, rgba(45, 106, 62, 0.85) 100%),
+                      url('https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375');
+    min-height: 65vh;
+}
+
+.elegant-intro .brand-heading {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .elegant-intro .brand-heading {
+        font-size: 2.5rem;
+    }
+}
+
+/* Section Headers */
+section .content-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+section .content-section h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+/* Button Improvements */
+.btnghost {
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 1rem 0.5rem;
+    display: inline-block;
+    min-width: 180px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    box-shadow: var(--shadow-sm);
+}
+
+.btnghost:hover {
+    background: var(--gradient-accent);
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Navigation Improvements */
+.navbar-custom {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    color: var(--primary-color);
+}
+
+.navbar-custom .nav-link {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Content Section Improvements */
+.content-section {
+    padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        padding: 3rem 0;
+    }
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gallery Improvements */
+.gallery ul li {
+    transition: transform 0.3s ease;
+}
+
+.gallery ul li:hover {
+    transform: translateY(-8px);
+}
+
+.gallery ul li img {
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    transition: box-shadow 0.3s ease;
+}
+
+.gallery ul li:hover img {
+    box-shadow: var(--shadow-lg);
+}
+
+/* Footer Improvements */
+footer {
+    background: var(--primary-color);
+    padding: 3rem 0;
+}
+
+footer p.credits {
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Print Styles for Legal Pages */
+@media print {
+    .legal-content {
+        box-shadow: none;
+        padding: 1rem;
+    }
+
+    .navbar-custom,
+    footer,
+    .btn-circle {
+        display: none;
+    }
+
+    .intro {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+}

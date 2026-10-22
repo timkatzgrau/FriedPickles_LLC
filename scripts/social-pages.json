@@ -1,0 +1,22 @@
+{
+  "index": {
+    "title": "A better way to find<br>what matters.",
+    "subtitle": "The company behind ChillMaps and RepairSeeker.",
+    "image": "company-white"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "subtitle": "How information is collected and used across our services.",
+    "image": "privacy-white"
+  },
+  "terms": {
+    "title": "Terms &amp; conditions",
+    "subtitle": "Terms for the services operated by Fried Pickles LLC.",
+    "image": "terms-white"
+  },
+  "sms": {
+    "title": "SMS messaging",
+    "subtitle": "Information about our optional text messaging service.",
+    "image": "sms-white"
+  }
+}

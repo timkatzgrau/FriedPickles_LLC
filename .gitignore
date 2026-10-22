@@ -42,3 +42,7 @@ Temporary Items
 
 ### Node modules ###
 node_modules/
+.playwright-mcp/
+
+.DS_Store
+.wrangler/

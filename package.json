@@ -1,16 +1,20 @@
 {
-  "name": "template-aries-bootstrap-html",
-  "version": "1.2.0",
-  "description": "A Bootstrap 4 template with sass, concatenation, minification, autoprefixer, sourcemaps, browser-sync, git and gulp task runner",
-  "main": "index.js",
+  "name": "fried-pickles-company",
+  "version": "2.0.0",
+  "description": "The company website for Fried Pickles LLC, creators of ChillMaps and RepairSeeker.",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --docs",
+    "deploy": "npm run build && node scripts/deploy.mjs"
   },
-  "author": "wowthemesnet",
+  "author": "Fried Pickles LLC",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wowthemesnet/template-aries-bootstrap-html"
+    "url": "https://github.com/timkatzgrau/FriedPickles_LLC.git"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -25,5 +29,6 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0"
-  }
+  },
+  "private": true
 }
